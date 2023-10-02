@@ -2,23 +2,30 @@ function App() {
   return (
     <div className="md:px-9  px-0">
       <div className="flex  justify-center  items-center h-[100vh] md:gap-0  sm:gap-4 md:flex-row flex-col  w-full ">
-        <div className=" rounded-3xl items-center justify-center shadow-xl shadow-slate-200 w-full flex md:p-7 md:flex-row flex-col">
-          <div className="col-first rounded-[36px]  w-full md-w-[70%] md:mt-0 mt-[20%]">
-            <h3 className="p-7  result  ">Your Result</h3>
+        <div className=" rounded-3xl items-center justify-center shadow-xl shadow-slate-200 w-50 flex md:py-0 md:flex-row flex-col">
+          <div
+            className="col-first rounded-3xl  w-full   md:mt-2 mt-[20%]"
+            style={{ height: "30rem" }}
+          >
+            <h3 className="p-7 pt-0  result  ">Your Result</h3>
             <div>
-              <div className=" pt-2 text-5xl my-8 text-center ">
-                <span className=" my-bg  rounded-full p-9 px-10  main">76</span>
+              <div className=" pt-6 text-5xl my-8 text-center ">
+                <span className=" my-bg  rounded-full  p-10 px-11  main">
+                  76
+                </span>
                 <p className="  text-sm py-2 small"> of 100</p>
               </div>
 
-              <p className=" main-sub ">Great</p>
-              <p className=" mt-2 desc">You scored higher than 65% of the</p>
-              <p className="desc ">people who have taken these tests.</p>
+              <p className=" main-sub pt-9">Great</p>
+              <p className=" mt-2 desc mx-3 ">
+                You scored higher than 65% of the
+              </p>
+              <p className="desc mx-9">people who have taken these tests.</p>
             </div>
           </div>
 
-          <div className="col-second mt-6 w-full px-9 ">
-            <p className=" sub-h pb-5"> Summary </p>
+          <div className="col-second my-6 w-full px-9  ">
+            <p className=" sub-h py-5"> Summary </p>
             <ul className="w-full ">
               <div className="flex  reaction rounded-2xl   justify-between w-full items-center">
                 <div className="flex items-center justify-between">
