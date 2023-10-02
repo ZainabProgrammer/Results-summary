@@ -1,13 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* -Font Weights: 500, 700, 800 */
+
+:root {
+  --Light-red: hsla(0, 90%, 76%, 1);
+  --Orange-yellow: hsla(42, 100%, 60%, 1);
+  --Green-teal: hsla(166, 100%, 39%, 1);
+  --Cobalt-blue: hsl(234, 100%, 35%);
+  /* background */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  /* circle */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  /* other neutrals */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.my-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
+}
+.col-first {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+  text-align: center;
+  padding: 2.2rem;
+  /* color: var(--Pale-blue); */
+  font-weight: 500;
+  padding-top: 3rem;
+}
+.sub-h {
+  font-weight: 700;
+  color: var(--Dark-gray-blue);
+  font-size: 20px;
+}
+.btn {
+  background-color: var(--Dark-gray-blue);
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.col-second {
+  color: var(--Dark-gray-blue);
+}
+.reaction {
+  color: var(--Light-red);
+  background-color: hsla(0, 100%, 85%, 0.1);
+  font-weight: 700;
+  font-size: 16px;
+}
+.memory {
+  color: var(--Orange-yellow);
+  background-color: hsla(39, 100%, 75%, 0.1);
+  font-weight: 700;
+  font-size: 16px;
+}
+.verbal {
+  color: var(--Green-teal);
+  background-color: hsla(166, 100%, 80%, 0.1);
+  font-weight: 700;
+  font-size: 16px;
+}
+.visual {
+  color: var(--Cobalt-blue);
+  background-color: hsla(234, 85%, 80%, 0.1);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.result {
+  color: hsla(221, 100%, 96%, 0.7);
+  font-weight: 500;
+}
+.main {
+  color: var(--Pale-blue);
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+.main-sub {
+  color: var(--Pale-blue);
+  font-weight: 700;
+  font-size: x-large;
+}
+.desc {
+  color: hsla(221, 100%, 96%, 0.7);
+  font-size: 16px;
+  font-weight: 500;
+}
+.small {
+  color: hsla(221, 100%, 96%, 0.4);
+  font-weight: 800;
+  font-size: medium;
+}
+.hundred {
+  color: hsla(221, 100%, 20%, 0.4);
 }
